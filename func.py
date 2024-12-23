@@ -20,4 +20,6 @@ def process_csv_to_txt(input_file, output_file):
 input_csv_path = os.path.join('data', 'weekly_IBM.csv')
 output_txt_path = os.path.join('data', 'output.txt')
 
-
+# Вызываем функцию обработки
+processed_file = process_csv_to_txt(input_csv_path, output_txt_path)
+print(f"Обработанный файл сохранен как: {processed_file}")
