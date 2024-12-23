@@ -8,3 +8,12 @@ def process_csv_to_txt(input_file, output_file):
         rows = list(reader)  # Читаем все строки в список
         row_count = len(rows)  # Подсчитываем количество строк
 
+    # Записываем результат в TXT файл
+    with open(output_file, mode='w') as file:
+        file.write(f"Количество строк в таблице: {row_count}\n")
+        for row in rows:
+            file.write(', '.join(row) + '\n')  # Записываем каждую строку
+
+    return output_file
+
+
