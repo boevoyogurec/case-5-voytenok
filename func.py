@@ -16,4 +16,8 @@ def process_csv_to_txt(input_file, output_file):
 
     return output_file
 
+# Указываем путь к файлам
+input_csv_path = os.path.join('data', 'weekly_IBM.csv')
+output_txt_path = os.path.join('data', 'output.txt')
+
 
